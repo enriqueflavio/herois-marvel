@@ -21,7 +21,6 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "@types/chart.js": "^2.7.28",
-    "angular-bootstrap-md": "^6.2.0",
     "angular5-csv": "^0.2.10",
     "bootstrap": "^4.1.2",
     "chart.js": "^2.5.0",

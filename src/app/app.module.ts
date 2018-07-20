@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    AppRoutingModule
+  ],
+  exports: [
+    LayoutModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
