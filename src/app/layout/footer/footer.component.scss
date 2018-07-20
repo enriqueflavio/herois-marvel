@@ -1,0 +1,10 @@
+@import "../../shared/sass/_variaveis";
+
+.footer {
+  background: $azul-escuro;
+  padding: 30px;
+  text-align: center;
+  a{
+    color: $branco;
+  }
+}
