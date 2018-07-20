@@ -1,0 +1,25 @@
+@import "../../shared/sass/_variaveis";
+
+.sidebar {
+  width: 15%;
+  height: 100%;
+  float: left;
+  margin-top: 70px;
+  overflow: auto;
+  display: none;
+  position: fixed;
+  ul {
+    display: block;
+  }
+  a{
+    padding-left: 0px;
+  }
+  @media(min-width: $xl) {
+    width: 10%;
+    height: 100%;
+    float: left;
+    margin-top: 70px;
+    display: block;
+    overflow: auto;
+  }
+}

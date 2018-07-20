@@ -1,0 +1,13 @@
+@import "../../shared/sass/_variaveis";
+
+.header {
+  background: $verde;
+  height: 280px;
+  margin:0 -50px;
+  position: relative;
+}
+
+.navbar {
+  padding:0 50px;
+  color: $branco;
+}
