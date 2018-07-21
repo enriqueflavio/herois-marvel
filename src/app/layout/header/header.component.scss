@@ -2,12 +2,31 @@
 
 .header {
   background: $verde;
-  height: 280px;
+  height: 380px;
   margin:0 -50px;
   position: relative;
+  overflow: hidden;
+  h1 {
+    color: $branco;
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+  }
+  img {
+    z-index: 0;
+    width: 100%;
+    opacity: 0.05;
+    margin: -25px 0 0 0;
+    position: absolute;
+    top: 0px;
+    transition: all 1s ease-out;
+    &.animate {
+      opacity: 0;
+    }
+
+  }
 }
 
 .navbar {
   padding:0 50px;
   color: $branco;
+  z-index: 90;
 }

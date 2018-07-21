@@ -6,6 +6,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { ContainerComponent } from './container/container.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     SidebarComponent,
     HeaderComponent,
     ContainerComponent,
-    FooterComponent
+    FooterComponent,
+    NavComponent
   ]
 })
 export class LayoutModule { }
