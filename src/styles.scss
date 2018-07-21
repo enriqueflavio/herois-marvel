@@ -1,5 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "./app/shared/sass/_variaveis";
+
 * {
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
+}
+
+.sidebar-ul, .navbar-ul {
+  list-style: none;
+  padding: 0;
+  margin: 1px 0;
+}
+
+.navbar-ul {
+  z-index: 91;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  li {
+    float: left;
+    margin: 0 10px;
+    a {
+      color: $branco;
+      display: block;
+      padding-top: 65px;
+      font-size: 18px;
+      &:hover {
+        text-decoration: none;
+        padding-top: 60px;
+        border-top:5px solid $vermelho;
+      }
+    }
+  }
+}
+
+.sidebar-ul {
+  margin-top: 15px;
+  padding-left: -3px;
+  li {
+    margin: 10px 0;
+  }
+  a {
+    color: $vermelho;
+    font-size: 18px;
+    padding-left:3px;
+    &:hover {
+      text-decoration: none;
+      padding-left: 0px;
+      border-left:3px solid $vermelho;
+    }
+  }
 }

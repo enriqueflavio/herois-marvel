@@ -6,9 +6,14 @@
   margin:0 -50px;
   position: relative;
   overflow: hidden;
-  h1 {
-    color: $branco;
-    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+  .contain-header {
+    display: block;
+    h1 {
+      margin: 0 50px;
+      z-index: 91;
+      color: $branco;
+      font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    }
   }
   img {
     z-index: 0;

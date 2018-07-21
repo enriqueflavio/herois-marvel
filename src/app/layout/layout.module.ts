@@ -6,6 +6,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { ContainerComponent } from './container/container.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { NavComponent } from './nav/nav.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { NavComponent } from './nav/nav.component';
     HeaderComponent,
     ContainerComponent,
     FooterComponent,
+    NavbarComponent,
     NavComponent
   ]
 })
