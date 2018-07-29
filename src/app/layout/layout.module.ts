@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,10 +9,12 @@ import { ContainerComponent } from './container/container.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavComponent } from './nav/nav.component';
+import { BuscaComponent } from './busca/busca.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     LayoutComponent,
@@ -20,7 +23,11 @@ import { NavComponent } from './nav/nav.component';
     ContainerComponent,
     FooterComponent,
     NavbarComponent,
-    NavComponent
+    NavComponent,
+    BuscaComponent
+  ],
+  exports: [
+    BuscaComponent
   ]
 })
 export class LayoutModule { }
