@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { HerosService } from './../../services/heros.service';
+
 @Component({
   selector: 'app-heros',
   templateUrl: './heros.component.html',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HerosComponent implements OnInit {
 
-  constructor() { }
+  fillerContent = [];
+
+  constructor(private herosService: HerosService) { }
 
   ngOnInit() {
+
+    this.herosService.getHero()
+      .subscribe((dados) => {
+        console.log(dados);
+        this.addFillerContent(dados['data'].results);
+      });
+
+  }
+
+  addFillerContent (dados) {
+    for (const hero of dados) {
+      this.fillerContent.push(hero);
+    }
   }
 
 }

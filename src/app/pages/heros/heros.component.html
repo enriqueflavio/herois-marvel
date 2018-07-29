@@ -1,8 +1,8 @@
 <app-busca></app-busca>
 
-<div class="card" style="width: 14rem;">
-  <img class="card-img-top" src="" alt="herois">
+<div class="card" *ngFor="let hero of fillerContent" >
+  <img class="card-img-top" src="{{hero.thumbnail.path}}/standard_medium.{{hero.thumbnail.extension}}" alt="herois">
   <div class="card-body">
-    <p class="card-text">Nome Herois</p>
+    <p class="card-text">{{hero.name}}</p>
   </div>
 </div>
