@@ -9,7 +9,7 @@
 /node_modules
 
 # Dados Api
-/src/app/shared/infosAPI.ts
+#/src/app/shared/infosAPI.ts
 
 # IDEs and editors
 /.idea
