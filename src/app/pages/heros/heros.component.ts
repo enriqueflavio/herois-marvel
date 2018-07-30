@@ -17,10 +17,18 @@ export class HerosComponent implements OnInit {
 
     this.herosService.getHero()
       .subscribe((dados) => {
-        console.log(dados);
+        // console.log(dados);
         this.addFillerContent(dados['data'].results);
       });
 
+  }
+
+  onScroll() {
+    this.herosService.getMoreHero()
+      .subscribe((dados) => {
+        // console.log(dados);
+        this.addFillerContent(dados['data'].results);
+      });
   }
 
   addFillerContent (dados) {
@@ -28,5 +36,6 @@ export class HerosComponent implements OnInit {
       this.fillerContent.push(hero);
     }
   }
+
 
 }

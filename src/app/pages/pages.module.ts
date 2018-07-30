@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
 import { HttpClientModule } from '@angular/common/http';
 import { HerosService } from './../services/heros.service';
 
@@ -11,7 +13,8 @@ import { HerosComponent } from './heros/heros.component';
   imports: [
     CommonModule,
     LayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    InfiniteScrollModule
   ],
   declarations: [HerosComponent],
   providers: [

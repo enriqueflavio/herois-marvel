@@ -6,3 +6,10 @@
     <p class="card-text">{{hero.name}}</p>
   </div>
 </div>
+
+<div class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()">
+</div>
