@@ -8,6 +8,9 @@ import { HerosService } from './../services/heros.service';
 
 import { LayoutModule } from './../layout/layout.module';
 import { HerosComponent } from './heros/heros.component';
+import { QuadrinhosComponent } from './quadrinhos/quadrinhos.component';
+import { SeriesComponent } from './series/series.component';
+import { EventosComponent } from './eventos/eventos.component';
 
 @NgModule({
   imports: [
@@ -16,7 +19,7 @@ import { HerosComponent } from './heros/heros.component';
     HttpClientModule,
     InfiniteScrollModule
   ],
-  declarations: [HerosComponent],
+  declarations: [HerosComponent, QuadrinhosComponent, SeriesComponent, EventosComponent],
   providers: [
     HerosService
   ],

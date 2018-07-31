@@ -7,8 +7,11 @@ import { HerosComponent } from './pages/heros/heros.component';
 
 const routes: Routes = [
   { path: '', component: LayoutComponent, children: [
-    {path: '', component: HerosComponent}
-  ] }
+    {path: 'herois', component: HerosComponent},
+    {path: 'quadrinhos', component: HerosComponent},
+    {path: 'eventos', component: HerosComponent},
+    {path: 'series', component: HerosComponent}
+  ]}
 ];
 
 @NgModule({

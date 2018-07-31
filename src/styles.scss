@@ -26,7 +26,7 @@
       display: block;
       padding-top: 65px;
       font-size: 18px;
-      &:hover {
+      &:hover, &.active {
         text-decoration: none;
         padding-top: 60px;
         border-top:5px solid $vermelho;
@@ -45,7 +45,7 @@
     color: $vermelho;
     font-size: 18px;
     padding-left:3px;
-    &:hover {
+    &:hover, &.active {
       text-decoration: none;
       padding-left: 0px;
       border-left:3px solid $vermelho;
