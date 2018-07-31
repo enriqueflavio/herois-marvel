@@ -1,3 +1,16 @@
-<p>
-  quadrinhos works!
-</p>
+<app-busca></app-busca>
+
+<div class="card" *ngFor="let comic of fillerContent" >
+  <img class="card-img-top" src="{{comic.thumbnail.path}}/portrait_xlarge.{{comic.thumbnail.extension}}" alt="{{comic.title}}">
+  <div class="card-body">
+    <p class="card-text">{{comic.title}}</p>
+  </div>
+</div>
+
+
+<div class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()">
+</div>

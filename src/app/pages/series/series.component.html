@@ -1,3 +1,16 @@
-<p>
-  series works!
-</p>
+<app-busca></app-busca>
+
+<div class="card" *ngFor="let series of fillerContent" >
+  <img class="card-img-top" src="{{series.thumbnail.path}}/portrait_xlarge.{{series.thumbnail.extension}}" alt="{{series.title}}">
+  <div class="card-body">
+    <p class="card-text">{{series.title}}</p>
+  </div>
+</div>
+
+
+<div class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()">
+</div>

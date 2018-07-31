@@ -1,10 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "./app/shared/sass/_variaveis";
+@import "./app/shared/sass/ball-running-dots.min.css";
+@import "./app/shared/sass/line-scale.min.css";
 
 * {
   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
+}
+
+.search-results {
+  float: left;
 }
 
 .sidebar-ul, .navbar-ul {

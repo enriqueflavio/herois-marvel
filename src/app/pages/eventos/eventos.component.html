@@ -1,3 +1,16 @@
-<p>
-  eventos works!
-</p>
+<app-busca></app-busca>
+
+<div class="card" *ngFor="let eventos of fillerContent" >
+  <img class="card-img-top" src="{{eventos.thumbnail.path}}/portrait_xlarge.{{eventos.thumbnail.extension}}" alt="{{eventos.title}}">
+  <div class="card-body">
+    <p class="card-text">{{eventos.title}}</p>
+  </div>
+</div>
+
+
+<div class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()">
+</div>

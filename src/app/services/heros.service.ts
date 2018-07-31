@@ -18,7 +18,7 @@ export class HerosService {
 
   public getMoreHero() {
     this.offset += 20;
-    console.log(this.offset);
+    // console.log(this.offset);
     return this.http.get(`${InfosAPI.url}/characters?offset=${this.offset}&apikey=${InfosAPI.apikey}&hash=${InfosAPI.hashkey}&ts=${InfosAPI.ts}`);
   }
 

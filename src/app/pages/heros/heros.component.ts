@@ -14,7 +14,7 @@ export class HerosComponent implements OnInit {
   constructor(private herosService: HerosService) { }
 
   ngOnInit() {
-
+    window.scrollTo(0, 0);
     this.herosService.getHero()
       .subscribe((dados) => {
         // console.log(dados);
@@ -36,6 +36,5 @@ export class HerosComponent implements OnInit {
       this.fillerContent.push(hero);
     }
   }
-
 
 }
