@@ -16,3 +16,4 @@ Uma listagem de cada um em seus devidos menus.
 
 - Loading de espera dos resultados. 
 - Detalhes de cada item da listagem.
+- Pesquisa
