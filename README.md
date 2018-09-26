@@ -4,8 +4,6 @@ Usando api da [MARVEL](https://developer.marvel.com/).
 
 # Hospedado em
 
-[herois-marvel](http://herois-marvel.surge.sh/) - Surge
-
 [herois-marvel](https://heros-marvel.herokuapp.com) - Heroku
 
 #O que tem?
